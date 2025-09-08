@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        p,
+        header,
+        nav,
+        a,
+        footer {
+            font-family: Roboto;
+        }
+
+        header {
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        footer {
+            font-size: 13px;
+            color: navy;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-text {
+            margin: 0px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+
+        .contact {
+            border: none;
+            scale: 1.1;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        a {
+            margin-right: 2%;
+            border-style: solid;
+            background-color: gray;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+
+            transition: transform 0.1s;
+        }
+
+        a:active {
+            transform: scale(0.95);
+        }
+
+        hr {
+            margin-top: 20%;
+            margin-bottom: 2%;
+        }
+
+        .logo {
+            width: 15%;
+        }
+
+        .form-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .google-form {
+            width: 50%;
+            height: 600px;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header><h1>Team 14</h1></header>
+
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="contact">Contact</a>
+        </nav>
+
+        <div class="form-box">
+            <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeuNS2ahrN7YvAeFUV4v9YCPNzZu-6UwRYGt3JTBeDF-Vie9A/viewform?embedded=true">
+            </iframe>
+        </div>
+        
+        <hr>
+        <footer>
+            <p class="footer-text">
+                CST336 Internet Programming. 2025&#169; Nguyen, Rodriguez, Romo, Pham
+            </p>
+
+            <p class="footer-text">
+                Disclaimer: The information in this webpage is fictious. It is used for academic purposes only.
+            </p>
+
+            <img src="images/csumb.png" alt="CSUMB Logo" class="logo">
+
+
+        </footer>
+    </div>
+</body>

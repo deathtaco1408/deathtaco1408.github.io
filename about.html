@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        p,
+        header,
+        nav,
+        a,
+        footer {
+            font-family: Roboto;
+        }
+
+        header {
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        footer {
+            font-size: 13px;
+            color: navy;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-text {
+            margin: 0px;
+        }   
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+
+        .about {
+            border: none;
+            scale: 1.1;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        a {
+            margin-right: 2%;
+            border-style: solid;
+            background-color: gray;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+
+            transition: transform 0.1s;
+        }
+
+        a:active {
+            transform: scale(0.95);
+        }
+
+        table {
+            border: solid;
+            width: 200px;
+            text-align: center;
+            display: flex;
+        }
+
+        td {
+          border: solid;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        hr {
+            margin-top: 20%;
+        }
+
+        h3 {
+            margin-bottom: 0px;
+        }
+
+        .logo {
+            width: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header><h1>Team 14</h1></header>
+
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="about.html" class="about">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="info">
+        <table>
+            <tr>
+                <th>Programming Language</th>
+                <th>Years of Experience</th>
+            </tr>
+
+            <tr>
+                <td>Java</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>0</td>
+            </tr>
+
+        </table> 
+
+        <h3>Things About Us</h3>
+        <ul>
+            <li>We all know how to program in Java.</li>
+            <li>We enjoy watching anime.</li>
+            <li>We go to California State University of Monterey Bay.</li>
+        </ul>
+    </div>
+
+
+    <hr>
+    <footer>
+            <p class="footer-text">
+                CST336 Internet Programming. 2025&#169; Nguyen, Rodriguez, Romo, Pham
+            </p>
+
+            <p class="footer-text">
+                Disclaimer: The information in this webpage is fictious. It is used for academic purposes only.
+            </p>
+
+        <img src="images/csumb.png" alt="CSUMB Logo" class="logo">
+    </footer>
+</body>
+</html>
