@@ -39,14 +39,14 @@ body{
     background-position: center;    
 }
 
-footer{
+/* footer{
     background-color: silver;
     font-size:3vw; 
     color:black;
     text-align:center; 
     top:10px;
     font-family: Roboto;
-}
+} */
 
 footer {
     font-size: 13px;
