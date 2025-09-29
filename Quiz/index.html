@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz</title>
+</head>
+My Quiz 
+<hr>
+<body>
+    <!--//text input -->
+    <label for="a1">What is the name of Goku's Son</label>
+    <input id="a1" >
+    <p id="a1-result"></p>
+    <hr>
+
+    <!--//checkboxes -->
+    <label>What are the colors in the American Flag?</label><br>
+    <input type="checkbox" id="red" name = "colors" value = "red">
+    <label for="red">Red</label>
+
+    <input type="checkbox" id="green" name = "colors" value = "green">
+    <label for="green">Green</label>
+
+    <input type="checkbox" id="blue" name="colors" value = "blue">
+    <label for="blue">Blue</label>
+    <p id="a2-result"></p>
+
+
+    <hr>
+    <!--//dropdown-->
+    <label for="myDropdown">what the abbreviation of the anime that Goku is in?</label>
+    <select id="myDropdown" name="selectedOption">
+        <option value="dbz">DBZ</option>
+        <option value="jjk">JJK</option>
+        <option value="heroaca">BnHA</option>
+    </select>
+    <p id="dropdown-result"></p>
+
+
+    <!-- <input type="radio" id="1" name="q3-answers" value = "1">
+    <label for="1">1</label>
+    <input type="radio" id="2" name="q3-answers" value = "2">
+    <label for="2">2</label>
+    <input type="radio" id="3" name="q3-answers" value= "3">
+    <label for="3">3</label>
+    <input type="radio" id="4" name="q3-answers" value = "4">
+    <label for="4">4</label> -->
+    <hr>
+    <label>How many stars are in Goku's first Dragon Ball</label><br>
+    <div id = q3-space>
+
+    </div>
+    <p id="a3-result"></p>
+
+    <hr>
+    <button id="submit">Submit</button>
+    <p id="result"></p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <script src="script.js" defer></script>
+
+
+
+</body>
+</html>
