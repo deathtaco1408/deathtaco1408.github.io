@@ -2,50 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PDF Viewer</title>
+  <title>Resume PDF</title>
   <style>
-    html, body { height: 100%; margin: 0; }
-    .wrap { height: 100%; display: flex; flex-direction: column; }
-    header {
-      padding: 10px 14px;
-      border-bottom: 1px solid #e5e5e5;
-      font: 14px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      display: flex; gap: 12px; align-items: center; justify-content: space-between;
+    html, body {
+      margin: 0;
+      height: 100%;
     }
-    header a { text-decoration: none; }
-    .viewer { flex: 1; }
-    iframe { width: 100%; height: 100%; border: 0; }
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div><strong>Document</strong></div>
-      <div>
-        <a id="dl" href="#" download>Download PDF</a>
-      </div>
-    </header>
+  <iframe
+    src="https://deathtaco1408.github.io/Resume.pdf"
+    title="Resume PDF Viewer"
+  ></iframe>
 
-    <div class="viewer">
-      <iframe
-        id="pdfFrame"
-        title="PDF"
-        src=""
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-
-  <script>
-    // Set this to your PDF path or URL:
-    const PDF_URL = "Resume.pdf";
-
-    const frame = document.getElementById("pdfFrame");
-    const dl = document.getElementById("dl");
-
-    frame.src = PDF_URL;
-    dl.href = PDF_URL;
-  </script>
+  <p style="font-family: Arial, sans-serif; text-align:center;">
+    If the PDF does not display, <a
+      href="https://deathtaco1408.github.io/Resume%20.pdf"
+      target="_blank"
+      rel="noopener"
+    >open it directly</a>.
+  </p>
 </body>
 </html>
